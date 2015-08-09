@@ -4,7 +4,8 @@
 name:                googlepolyline
 version:             0.1.0.0
 synopsis:            Google Polyline Encoder/Decoder
--- description:         
+description:         
+    Encoding and decoding functions for Google Maps' polyline format.
 license:             MIT
 license-file:        LICENSE
 author:              Lorne Applebaum
@@ -12,8 +13,14 @@ maintainer:          me@lorne.me
 -- copyright:           
 category:            Data, Text
 build-type:          Simple
+Homepage:            https://github.com/lornap/googlepolyline
+Bug-reports:         https://github.com/lornap/googlepolyline/issues
 -- extra-source-files:  
 cabal-version:       >=1.10
+
+source-repository head
+  type: git
+  location: https://github.com/lornap/googlepolyline
 
 library
   exposed-modules:     Data.Text.GooglePolyline
