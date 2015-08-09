@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                googlepolyline
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Google Polyline Encoder/Decoder
 description:         
     Encoding and decoding functions for Google Maps' polyline format.
@@ -34,8 +34,11 @@ library
 
 Test-Suite test-googlepolyline
   type:                exitcode-stdio-1.0
-  hs-source-dirs:      tests, src
+  hs-source-dirs:      tests
+  other-modules:       Units
+                     , QuickCheck
   build-depends:       base >=4.7 && <4.8
+                     , googlepolyline
                      , bytestring >= 0.10 && <0.11
                      , text >= 1.2 && <1.3
                      , HUnit >= 1.2 && <1.3
