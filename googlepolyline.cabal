@@ -37,12 +37,12 @@ Test-Suite test-googlepolyline
   hs-source-dirs:      tests
   other-modules:       Units
                      , QuickCheck
-  build-depends:       base >=4.7 && <4.8
+  build-depends:       base >=4.7 && <4.9
                      , googlepolyline
                      , bytestring >= 0.10 && <0.11
                      , text >= 1.2 && <1.3
-                     , HUnit >= 1.2 && <1.3
-                     , QuickCheck >= 2.7 && <2.8
+                     , HUnit >= 1.2 && <1.4
+                     , QuickCheck >= 2.7 && <2.9
                      , test-framework-hunit >= 0.3 && <0.4
                      , test-framework-quickcheck2 >= 0.3 && <0.4
                      , test-framework >= 0.8 && <0.9
